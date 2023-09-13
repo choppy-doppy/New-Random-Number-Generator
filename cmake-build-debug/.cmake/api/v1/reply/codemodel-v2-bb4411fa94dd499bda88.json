@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "New_Random_Number_Generator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-New_Random_Number_Generator-Debug-c86efadcf615b4714dc2.json",
+					"jsonFile" : "target-New_Random_Number_Generator-Debug-ff90f10e4aa7ca51c67d.json",
 					"name" : "New_Random_Number_Generator",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/kaedo/OneDrive/Documents/GitHub/New-Random-Number-Generator/cmake-build-debug",
-		"source" : "C:/Users/kaedo/OneDrive/Documents/GitHub/New-Random-Number-Generator"
+		"build" : "C:/Users/chop/Documents/GitHub/New-Random-Number-Generator/cmake-build-debug",
+		"source" : "C:/Users/chop/Documents/GitHub/New-Random-Number-Generator"
 	},
 	"version" : 
 	{
