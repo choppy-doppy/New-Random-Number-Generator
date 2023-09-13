@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void placeholderFunc();
+__attribute__((noreturn)) void placeholderFunc();
 
 int main() {
     cout << "type a number to generate a random number between 1 and your number" << endl;
@@ -20,9 +20,14 @@ void placeholderFunc() {
         cin >> userInput;
         if (userInput == "exit")
             exit(2);
-        cout << userInput << endl;
+        try {
+            int readInput = stoi(userInput);
+            cout << readInput << endl;
+        }
+        catch (std::invalid_argument&) {
+            cout << "INVALID INPUT" << endl;
+        }
     }
-
 }
 
 
