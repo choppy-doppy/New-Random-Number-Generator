@@ -1,19 +1,16 @@
 #include <iostream>
-#include <cstdlib>
-#include <windows.h>
 #include <string>
+#include <random>
 
 using namespace std;
-
-__attribute__((noreturn)) void placeholderFunc();
+void randNum();
 
 int main() {
     cout << "type a number to generate a random number between 1 and your number" << endl;
-    srand(GetTickCount());
-    placeholderFunc();
+    randNum();
 }
 
-void placeholderFunc() {
+void randNum() {
 
     for ( ; ; ) {
         string userInput;
@@ -22,7 +19,10 @@ void placeholderFunc() {
             exit(2);
         try {
             int readInput = stoi(userInput);
-            cout << readInput << endl;
+            random_device rd;
+            mt19937 gen(rd());
+            uniform_real_distribution<double> dist(1, readInput);
+            cout << dist(gen) << endl;
         }
         catch (std::invalid_argument&) {
             cout << "INVALID INPUT" << endl;
